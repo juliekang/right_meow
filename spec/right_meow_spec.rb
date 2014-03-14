@@ -39,4 +39,13 @@ describe 'right_meow' do
       expect(post.to_i).to eq(pre.to_i + 2)
     end
   end
+
+  describe "Object#meow" do
+    it "makes objects meow" do
+      expect(5.meow).to eq("Meow")
+      expect("Frank".meow).to eq("Meow")
+      expect(nil.meow).to eq("Meow")
+      expect([1, 2, 3].meow).to eq("Meow")
+    end
+  end
 end

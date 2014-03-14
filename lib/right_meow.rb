@@ -13,3 +13,9 @@ end
 def not_meow(n)
 	sleep(n)
 end
+
+class Object
+  def meow
+    "Meow"
+  end
+end
